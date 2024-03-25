@@ -1,0 +1,102 @@
+.navbar{
+    background: #1a1a1a;
+    height: 5rem;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.logo{
+    object-fit: cover;
+    height: 6rem;
+    width: 5rem;
+}
+
+.desktopMenuList{
+    margin: 1rem;
+    cursor: pointer;
+    font-family: 'poppins';
+}
+
+.desktopMenuList:hover{
+    border-bottom: 2px solid red;
+    padding-bottom: 0.5rem;
+    color: red;
+    /* font-size: large; */
+}
+
+.desktopMenuBtn{
+    border: none;
+    background: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.desktopMenuBtn:hover{
+    background: red;
+    color: white;
+}
+
+
+.contactMenuImg{
+    object-fit: cover;
+    height: 1rem;
+    width: 1rem;
+    margin: 1rem;
+}
+
+.active{
+    color: red;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid red;
+}
+
+.mobMenu{
+    display: none;
+    object-fit: cover;
+    height: 1.8rem;
+}
+.navMenu{
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: black;
+    border-radius: 1rem;
+}
+
+.menuList{
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: black;
+}
+
+@media screen and (max-width: 620px) {
+    .mobMenu{
+        display: flex;
+    }
+    .desktopMenuList{
+        display: none;
+    }
+    .desktopMenuBtn{
+        display: none;
+    }
+}
